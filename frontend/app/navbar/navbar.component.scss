@@ -1,0 +1,37 @@
+.logo-img {
+    vertical-align: middle;
+    height: 50px;
+}
+
+.sidenav-icon {
+    font-size: x-large;
+}
+
+.sidenav-info {
+    font-size: medium;
+    margin-left: 30px;
+}
+
+.nav-bg {
+    background-color: rgb(79, 93, 117);
+}
+
+.sidenav-bg {
+    background-color: rgb(191, 192, 192);
+}
+
+@media only screen and (min-width: 992px) {
+    .invisible-top {
+        top: 65px;
+    }
+}
+
+.logo {
+    left: 50px !important;
+}
+
+@media only screen and (min-width: 992px) {
+    .logo {
+        left: 0px !important;
+    }
+}

@@ -1,0 +1,34 @@
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper nav-bg">
+            <a href="#" data-target="sidenav" class="sidenav-trigger full hide-on-large-only">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <a routerLink="/">
+                <div class="brand-logo left logo">
+                    <img class="logo-img" src="assets/logo.png"> Rentable NFT
+                </div>
+            </a>
+        </div>
+    </nav>
+</div>
+<ul class="sidenav sidenav-fixed invisible-top sidenav-bg" id="sidenav">
+    <li>
+        <a class="bold" data-position="bottom" data-tooltip="Car" routerLink="category/car"><i class="fa-solid fa-car-side sidenav-icon"></i>Car</a>
+    </li>
+    <li>
+        <a class="bold" data-position="bottom" data-tooltip="Lamp" routerLink="category/locker"><i class="fa-solid fa-table-cells-large sidenav-icon"></i>Locker</a>
+    </li>
+    <li>
+        <a class="bold" data-position="bottom" data-tooltip="Locker" routerLink="category/house"><i class="fa-solid fa-house-lock sidenav-icon"></i>House</a>
+    </li>
+    <li class="divider"></li>
+    <li *ngIf="connected"><a><i class="fa-solid fa-user-check sidenav-icon"></i>Account</a></li>
+    <div class="sidenav-info truncate" *ngFor="let info of accountInfo">{{ info.key}}: {{ info.value }}</div>
+    <li *ngIf="!connected">
+        <a class="waves-effect waves-light btn-small blue darken-2" (click)="connect()"> Connect</a>
+    </li>
+    <li *ngIf="connected">
+        <a class="waves-effect waves-light btn-small blue darken-2" (click)="disconnect()"> Disconnect</a>
+    </li>
+</ul>

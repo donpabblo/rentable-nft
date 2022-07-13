@@ -1,0 +1,31 @@
+{
+    "name": "Car",
+    "description": "Rentable NFT tied to asset - Test Car donpabblo",
+    "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/1.png",
+    "external_url": "https://localhost:3000/#/asset/car/2",
+    "attributes": [
+        {
+            "trait_type": "model",
+            "value": "Citroen C3"
+        },
+        {
+            "trait_type": "license plate",
+            "value": "QA546RE"
+        },
+        {
+            "display_type": "boost_number",
+            "trait_type": "cc",
+            "value": 1400
+        },
+        {
+            "display_type": "number",
+            "trait_type": "Seats",
+            "value": 5
+        }
+    ],
+    "commands": [
+        "unlock",
+        "lock"
+    ],
+    "endpoint": "https://localhost:3000/asset/car/2/"
+}

@@ -1,0 +1,23 @@
+<app-loader *ngIf="wip"></app-loader>
+<div class="row" *ngIf="error">
+    <div class="col s12">
+        <div class="card-panel grey lighten-4">
+            {{error}}
+        </div>
+    </div>
+</div>
+<div class="row center">
+    <div *ngFor="let item of nft_list" class="col l3 m4 s6">
+        <div class="card clickable" (click)="gotoasset(item.id)">
+            <div class="card-image">
+                <img src="{{ item.metadata.image }}">
+            </div>
+            <div class="card-content">
+                <p>{{ item.metadata.name}} - {{ item.id }}</p>
+            </div>
+            <div class="card-action">
+                <a [ngClass]="{'userof': user == item.user, 'rented': user != item.user && item.user != '0x0000000000000000000000000000000000000000'}" href="#" routerLink="../../asset/{{category}}/{{item.id}}">{{ item.user == '0x0000000000000000000000000000000000000000' ? 'Rentable': user == item.user ? 'Rented by you' : 'Already Rented'}}</a>
+            </div>
+        </div>
+    </div>
+</div>

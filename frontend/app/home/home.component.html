@@ -1,0 +1,26 @@
+<div class="row center">
+</div>
+<div class="row center">
+    <div class="col s12">
+        <a class="big" data-position="bottom" data-tooltip="Car" routerLink="category/car"><i
+                class="fa-solid fa-car-side"></i> Cars</a>
+    </div>
+    <div class="col s12">
+        <a class="big" data-position="bottom" data-tooltip="Locker" routerLink="category/locker"><i
+                class="fa-solid fa-table-cells-large"></i> Lockers</a>
+    </div>
+    <div class="col s12">
+        <a class="big" data-position="bottom" data-tooltip="House" routerLink="category/house"><i
+                class="fa-solid fa-house-lock"></i> Houses</a>
+    </div>
+</div>
+
+<div class="row" *ngIf="error">
+    <div class="col s12">
+        <div class="card-panel grey lighten-4">
+            {{error}}
+        </div>
+    </div>
+</div>
+
+<app-loader *ngIf="wip"></app-loader>

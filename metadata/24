@@ -1,0 +1,26 @@
+{
+    "name": "Holyday House",
+    "description": "Rentable NFT tied to asset - Test House donpabblo",
+    "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
+    "external_url": "https://localhost:3000/#/asset/house/24",
+    "attributes": [
+        {
+            "trait_type": "company",
+            "value": "BnB Ria"
+        },
+        {
+            "trait_type": "place",
+            "value": "California"
+        },
+        {
+            "display_type": "number",
+            "trait_type": "guests",
+            "value": 4
+        }
+    ],
+    "commands": [
+        "unlock",
+        "lock"
+    ],
+    "endpoint": "https://localhost:3000/asset/house/24/"
+}

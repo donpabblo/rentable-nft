@@ -1,0 +1,47 @@
+<div class="row" *ngIf="error">
+    <div class="col s12">
+        <div class="card-panel grey lighten-4">
+            {{error}}
+        </div>
+    </div>
+</div>
+<div *ngIf="!wip" class="row">
+    <div class="row center">
+        <h4>{{ metadata ? metadata.name : '' }} - {{ metadata ? nft : '' }}</h4>
+        <h5>{{ metadata ? metadata.description: '' }}</h5>
+    </div>
+    <div class="row center">
+        <img class="asset" src="{{ image }}" />
+    </div>
+    <div *ngIf="metadata" class="row center">
+        <div *ngIf="rentable" class="row center">
+            <a class="waves-effect waves-light btn-small blue darken-2" (click)="rent()"> RENT </a>
+        </div>
+        <div *ngIf="!rentable" class="row center">
+            <div *ngFor="let cmd of metadata.commands" class="col s6">
+                <a class="waves-effect waves-light btn-small blue darken-2" (click)="run(cmd)"> {{ cmd }}</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s2"></div>
+        <table *ngIf="metadata" class="col s8 striped">
+            <tbody>
+                <tr>
+                    <td>Rented to</td>
+                    <td>{{ user }}</td>
+                </tr>
+                <tr>
+                    <td>Expires</td>
+                    <td>{{ expires ? user && user != 'None' ? expires : 'None' : 'None' }}</td>
+                </tr>
+                <tr *ngFor="let item of metadata.attributes">
+                    <td>{{ item. trait_type}}</td>
+                    <td>{{ item.value }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="col s2"></div>
+    </div>
+</div>
+<app-loader *ngIf="wip"></app-loader>
