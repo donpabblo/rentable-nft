@@ -12,7 +12,8 @@ router.get('/', async function (req, res) {
 });
 
 router.post('/:type', async function (req, res) {
-    counter[req.params.type]++;
+    counter[req.params.type] = counter[req.params.type] + 1;
+    res.json({update: "Ok"});
 });
 
 module.exports = router;

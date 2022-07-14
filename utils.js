@@ -3,8 +3,8 @@ function changeEndpoint() {
     for (var i = 1; i <= 30; i++) {
         let rawdata = fs.readFileSync('metadata/' + i);
         let json = JSON.parse(rawdata);
-        json.external_url = 'https://rentable-nft.vercel.app/#/asset/car/' + i;
-        json.endpoint = 'https://rentable-nft.vercel.app/asset/car/' + i;
+        json.external_url = 'https://rentable-nft.vercel.app/#/asset/car/' + i + '/';
+        json.endpoint = 'https://rentable-nft.vercel.app/asset/car/' + i + '/';
         let jsonString = JSON.stringify(json);
         fs.writeFileSync('metadata2/' + i, jsonString);
     }
