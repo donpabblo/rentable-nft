@@ -41,3 +41,4 @@ cache
 # System files
 .DS_Store
 Thumbs.db
+test.js

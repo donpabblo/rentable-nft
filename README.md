@@ -24,7 +24,7 @@ npx hardhat make-rentable --num 30
 
 npm run start
 ```
-Go to https://localhost:8443
+Go to https://localhost:3000
 Enjoy!
 
 # Test Contract

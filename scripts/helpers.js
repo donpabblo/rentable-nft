@@ -1,20 +1,20 @@
 const fs = require('fs');
-const { getContractAt } = require("@nomiclabs/hardhat-ethers/internal/helpers");
-//const { TokenSigner, TokenVerifier, decodeToken } = require("jsontokens");
 
 function writeConfig(address) {
-    rawdata = fs.readFileSync('config.json');
-    scriptConfig = JSON.parse(rawdata);
-    scriptConfig.contract_address = address;
-    scriptData = JSON.stringify(scriptConfig);
-    fs.writeFileSync('config.json', scriptData);
+    let result = "";
+    let rawdata = fs.readFileSync('.env').toString();
+    let rows = rawdata.split('\r\n');
+    for (var row of rows) {
+        let split = row.split("=");
+        if (split[0] == "CONTRACT") {
+            result += split[0] + '=' + '"' + address + '"' + '\r\n';
+        } else {
+            result += split[0] + '=' + split[1] + '\r\n';
+        }
+    }
+    fs.writeFileSync('.env', result);;
 }
 
-async function getContract(hre, contractName) {
-    rawdata = fs.readFileSync('config.json');
-    scriptConfig = JSON.parse(rawdata);
-    return await getContractAt(hre, contractName, scriptConfig.contract_address);
-}
 
 /*
 function signJWT(payload, priv_key) {
@@ -39,6 +39,5 @@ function decodeJWT(jwt) {
 */
 
 module.exports = {
-    writeConfig,
-    getContract
+    writeConfig
 }
