@@ -1,0 +1,832 @@
+{
+    "1": {
+        "name": "Car",
+        "description": "Rentable NFT tied to asset - Test Car donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/1.png",
+        "external_url": "https://localhost:3000/#/asset/car/1",
+        "attributes": [
+            {
+                "trait_type": "model",
+                "value": "Citroen C3"
+            },
+            {
+                "trait_type": "license plate",
+                "value": "QA546RE"
+            },
+            {
+                "display_type": "boost_number",
+                "trait_type": "cc",
+                "value": 1400
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Seats",
+                "value": 5
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/car/1/"
+    },
+    "2": {
+        "name": "Car",
+        "description": "Rentable NFT tied to asset - Test Car donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/1.png",
+        "external_url": "https://localhost:3000/#/asset/car/2",
+        "attributes": [
+            {
+                "trait_type": "model",
+                "value": "Citroen C3"
+            },
+            {
+                "trait_type": "license plate",
+                "value": "QA546RE"
+            },
+            {
+                "display_type": "boost_number",
+                "trait_type": "cc",
+                "value": 1400
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Seats",
+                "value": 5
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/car/2/"
+    },
+    "3": {
+        "name": "Car",
+        "description": "Rentable NFT tied to asset - Test Car donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/1.png",
+        "external_url": "https://localhost:3000/#/asset/car/3",
+        "attributes": [
+            {
+                "trait_type": "model",
+                "value": "Citroen C3"
+            },
+            {
+                "trait_type": "license plate",
+                "value": "QA546RE"
+            },
+            {
+                "display_type": "boost_number",
+                "trait_type": "cc",
+                "value": 1400
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Seats",
+                "value": 5
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/car/3/"
+    },
+    "4": {
+        "name": "Car",
+        "description": "Rentable NFT tied to asset - Test Car donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/1.png",
+        "external_url": "https://localhost:3000/#/asset/car/4",
+        "attributes": [
+            {
+                "trait_type": "model",
+                "value": "Citroen C3"
+            },
+            {
+                "trait_type": "license plate",
+                "value": "QA546RE"
+            },
+            {
+                "display_type": "boost_number",
+                "trait_type": "cc",
+                "value": 1400
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Seats",
+                "value": 5
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/car/4/"
+    },
+    "5": {
+        "name": "Car",
+        "description": "Rentable NFT tied to asset - Test Car donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/1.png",
+        "external_url": "https://localhost:3000/#/asset/car/5",
+        "attributes": [
+            {
+                "trait_type": "model",
+                "value": "Citroen C3"
+            },
+            {
+                "trait_type": "license plate",
+                "value": "QA546RE"
+            },
+            {
+                "display_type": "boost_number",
+                "trait_type": "cc",
+                "value": 1400
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Seats",
+                "value": 5
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/car/5/"
+    },
+    "6": {
+        "name": "Car",
+        "description": "Rentable NFT tied to asset - Test Car donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/1.png",
+        "external_url": "https://localhost:3000/#/asset/car/6",
+        "attributes": [
+            {
+                "trait_type": "model",
+                "value": "Citroen C3"
+            },
+            {
+                "trait_type": "license plate",
+                "value": "QA546RE"
+            },
+            {
+                "display_type": "boost_number",
+                "trait_type": "cc",
+                "value": 1400
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Seats",
+                "value": 5
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/car/6/"
+    },
+    "7": {
+        "name": "Car",
+        "description": "Rentable NFT tied to asset - Test Car donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/1.png",
+        "external_url": "https://localhost:3000/#/asset/car/7",
+        "attributes": [
+            {
+                "trait_type": "model",
+                "value": "Citroen C3"
+            },
+            {
+                "trait_type": "license plate",
+                "value": "QA546RE"
+            },
+            {
+                "display_type": "boost_number",
+                "trait_type": "cc",
+                "value": 1400
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Seats",
+                "value": 5
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/car/7/"
+    },
+    "8": {
+        "name": "Car",
+        "description": "Rentable NFT tied to asset - Test Car donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/1.png",
+        "external_url": "https://localhost:3000/#/asset/car/8",
+        "attributes": [
+            {
+                "trait_type": "model",
+                "value": "Citroen C3"
+            },
+            {
+                "trait_type": "license plate",
+                "value": "QA546RE"
+            },
+            {
+                "display_type": "boost_number",
+                "trait_type": "cc",
+                "value": 1400
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Seats",
+                "value": 5
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/car/8/"
+    },
+    "9": {
+        "name": "Car",
+        "description": "Rentable NFT tied to asset - Test Car donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/1.png",
+        "external_url": "https://localhost:3000/#/asset/car/9",
+        "attributes": [
+            {
+                "trait_type": "model",
+                "value": "Citroen C3"
+            },
+            {
+                "trait_type": "license plate",
+                "value": "QA546RE"
+            },
+            {
+                "display_type": "boost_number",
+                "trait_type": "cc",
+                "value": 1400
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Seats",
+                "value": 5
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/car/9/"
+    },
+    "10": {
+        "name": "Car",
+        "description": "Rentable NFT tied to asset - Test Car donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/1.png",
+        "external_url": "https://localhost:3000/#/asset/car/10",
+        "attributes": [
+            {
+                "trait_type": "model",
+                "value": "Citroen C3"
+            },
+            {
+                "trait_type": "license plate",
+                "value": "QA546RE"
+            },
+            {
+                "display_type": "boost_number",
+                "trait_type": "cc",
+                "value": 1400
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Seats",
+                "value": 5
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/car/10/"
+    },
+    "11": {
+        "name": "Locker",
+        "description": "Rentable NFT tied to asset - Test Locker donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
+        "external_url": "https://localhost:3000/#/asset/locker/11",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "Nozama"
+            },
+            {
+                "trait_type": "model",
+                "value": "The best"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "serial number",
+                "value": 320929022
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/locker/11/"
+    },
+    "12": {
+        "name": "Locker",
+        "description": "Rentable NFT tied to asset - Test Locker donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
+        "external_url": "https://localhost:3000/#/asset/locker/12",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "Nozama"
+            },
+            {
+                "trait_type": "model",
+                "value": "The best"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "serial number",
+                "value": 320929022
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/locker/12/"
+    },
+    "13": {
+        "name": "Locker",
+        "description": "Rentable NFT tied to asset - Test Locker donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
+        "external_url": "https://localhost:3000/#/asset/locker/13",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "Nozama"
+            },
+            {
+                "trait_type": "model",
+                "value": "The best"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "serial number",
+                "value": 320929022
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/locker/13/"
+    },
+    "14": {
+        "name": "Locker",
+        "description": "Rentable NFT tied to asset - Test Locker donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
+        "external_url": "https://localhost:3000/#/asset/locker/14",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "Nozama"
+            },
+            {
+                "trait_type": "model",
+                "value": "The best"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "serial number",
+                "value": 320929022
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/locker/14/"
+    },
+    "15": {
+        "name": "Locker",
+        "description": "Rentable NFT tied to asset - Test Locker donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
+        "external_url": "https://localhost:3000/#/asset/locker/15",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "Nozama"
+            },
+            {
+                "trait_type": "model",
+                "value": "The best"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "serial number",
+                "value": 320929022
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/locker/15/"
+    },
+    "16": {
+        "name": "Locker",
+        "description": "Rentable NFT tied to asset - Test Locker donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
+        "external_url": "https://localhost:3000/#/asset/locker/16",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "Nozama"
+            },
+            {
+                "trait_type": "model",
+                "value": "The best"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "serial number",
+                "value": 320929022
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/locker/16/"
+    },
+    "17": {
+        "name": "Locker",
+        "description": "Rentable NFT tied to asset - Test Locker donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
+        "external_url": "https://localhost:3000/#/asset/locker/17",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "Nozama"
+            },
+            {
+                "trait_type": "model",
+                "value": "The best"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "serial number",
+                "value": 320929022
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/locker/17/"
+    },
+    "18": {
+        "name": "Locker",
+        "description": "Rentable NFT tied to asset - Test Locker donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
+        "external_url": "https://localhost:3000/#/asset/locker/18",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "Nozama"
+            },
+            {
+                "trait_type": "model",
+                "value": "The best"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "serial number",
+                "value": 320929022
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/locker/18/"
+    },
+    "19": {
+        "name": "Locker",
+        "description": "Rentable NFT tied to asset - Test Locker donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
+        "external_url": "https://localhost:3000/#/asset/locker/19",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "Nozama"
+            },
+            {
+                "trait_type": "model",
+                "value": "The best"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "serial number",
+                "value": 320929022
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/locker/19/"
+    },
+    "20": {
+        "name": "Locker",
+        "description": "Rentable NFT tied to asset - Test Locker donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
+        "external_url": "https://localhost:3000/#/asset/locker/20",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "Nozama"
+            },
+            {
+                "trait_type": "model",
+                "value": "The best"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "serial number",
+                "value": 320929022
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/locker/20/"
+    },
+    "21": {
+        "name": "Holyday House",
+        "description": "Rentable NFT tied to asset - Test House donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
+        "external_url": "https://localhost:3000/#/asset/house/21",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "BnB Ria"
+            },
+            {
+                "trait_type": "place",
+                "value": "California"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "guests",
+                "value": 4
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/house/21/"
+    },
+    "22": {
+        "name": "Holyday House",
+        "description": "Rentable NFT tied to asset - Test House donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
+        "external_url": "https://localhost:3000/#/asset/house/22",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "BnB Ria"
+            },
+            {
+                "trait_type": "place",
+                "value": "California"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "guests",
+                "value": 4
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/house/22/"
+    },
+    "23": {
+        "name": "Holyday House",
+        "description": "Rentable NFT tied to asset - Test House donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
+        "external_url": "https://localhost:3000/#/asset/house/23",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "BnB Ria"
+            },
+            {
+                "trait_type": "place",
+                "value": "California"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "guests",
+                "value": 4
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/house/23/"
+    },
+    "24": {
+        "name": "Holyday House",
+        "description": "Rentable NFT tied to asset - Test House donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
+        "external_url": "https://localhost:3000/#/asset/house/24",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "BnB Ria"
+            },
+            {
+                "trait_type": "place",
+                "value": "California"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "guests",
+                "value": 4
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/house/24/"
+    },
+    "25": {
+        "name": "Holyday House",
+        "description": "Rentable NFT tied to asset - Test House donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
+        "external_url": "https://localhost:3000/#/asset/house/25",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "BnB Ria"
+            },
+            {
+                "trait_type": "place",
+                "value": "California"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "guests",
+                "value": 4
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/house/25/"
+    },
+    "26": {
+        "name": "Holyday House",
+        "description": "Rentable NFT tied to asset - Test House donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
+        "external_url": "https://localhost:3000/#/asset/house/26",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "BnB Ria"
+            },
+            {
+                "trait_type": "place",
+                "value": "California"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "guests",
+                "value": 4
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/house/26/"
+    },
+    "27": {
+        "name": "Holyday House",
+        "description": "Rentable NFT tied to asset - Test House donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
+        "external_url": "https://localhost:3000/#/asset/house/27",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "BnB Ria"
+            },
+            {
+                "trait_type": "place",
+                "value": "California"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "guests",
+                "value": 4
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/house/27/"
+    },
+    "28": {
+        "name": "Holyday House",
+        "description": "Rentable NFT tied to asset - Test House donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
+        "external_url": "https://localhost:3000/#/asset/house/28",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "BnB Ria"
+            },
+            {
+                "trait_type": "place",
+                "value": "California"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "guests",
+                "value": 4
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/house/28/"
+    },
+    "29": {
+        "name": "Holyday House",
+        "description": "Rentable NFT tied to asset - Test House donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
+        "external_url": "https://localhost:3000/#/asset/house/29",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "BnB Ria"
+            },
+            {
+                "trait_type": "place",
+                "value": "California"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "guests",
+                "value": 4
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/house/29/"
+    },
+    "30": {
+        "name": "Holyday House",
+        "description": "Rentable NFT tied to asset - Test House donpabblo",
+        "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
+        "external_url": "https://localhost:3000/#/asset/house/30",
+        "attributes": [
+            {
+                "trait_type": "company",
+                "value": "BnB Ria"
+            },
+            {
+                "trait_type": "place",
+                "value": "California"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "guests",
+                "value": 4
+            }
+        ],
+        "commands": [
+            "unlock",
+            "lock"
+        ],
+        "endpoint": "https://localhost:3000/asset/house/30/"
+    }
+}

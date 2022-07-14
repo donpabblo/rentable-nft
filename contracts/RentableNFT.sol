@@ -22,7 +22,7 @@ contract RentableNFT is ERC4907, Ownable
 
     constructor(string memory _name, string memory _symbol) ERC4907(_name, _symbol)
     {
-        baseTokenURI = "https://bafybeif7eyj4tm56iysxordcznxkwydsvfgakor2xmxcezpf435nnxylqu.ipfs.dweb.link/metadata/";
+        baseTokenURI = "https://bafybeicrtqwqiupfregzoumecwg4bwqldm4j2pbpbrclkjiwko74ckeqzu.ipfs.dweb.link/metadata/";
     }
 
     function mint() public onlyOwner

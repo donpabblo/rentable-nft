@@ -21,6 +21,15 @@ function flat() {
     fs.writeFileSync('metadata.json', jsonString);
 }
 
+function unflat(env) {
+    let rawdata = fs.readFileSync('metadata_/metadata_' + env + '.json');
+    let json = JSON.parse(rawdata);
+    for (var i = 1; i <= 30; i++) {
+        let jsonString = JSON.stringify(json[i]);
+        fs.writeFileSync('metadata/' + i, jsonString);
+    }
+}
+
 function env(contract) {
     let result = "";
     let rawdata = fs.readFileSync('.env').toString();
@@ -36,4 +45,4 @@ function env(contract) {
     fs.writeFileSync('.env2', result);
 }
 
-changeEndpoint();
+unflat('localhost');

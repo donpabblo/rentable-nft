@@ -3,9 +3,16 @@ import { Contract, ethers } from "ethers";
 import Web3Modal from "web3modal";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import { MessageService } from './message.service';
-import RentableNFT from '../../../artifacts/contracts/RentableNFT.sol/RentableNFT.json'
+import RentableNFT from '../../../artifacts/contracts/RentableNFT.sol/RentableNFT.json';
+import metadata_l from '../../../metadata/metadata_localhost.json';
+import metadata_g from '../../../metadata/metadata_goerli.json';
 import { HttpClient } from '@angular/common/http';
 import { lastValueFrom } from 'rxjs';
+
+const metadata = {
+  localhost: metadata_l,
+  goerli: metadata_g
+}
 
 @Injectable({
   providedIn: 'root'
@@ -32,7 +39,6 @@ export class WalletService {
     };
 
     this.web3Modal = new Web3Modal({
-      network: 'mainnet',
       cacheProvider: false, // optional
       disableInjectedProvider: false, // optional. For MetaMask / Brave / Opera.
       providerOptions // required
@@ -95,11 +101,22 @@ export class WalletService {
       locker: [11, 20],
       house: [21, 30]
     }
+    let network = await this.getNetwork();
     let result = [];
+
     for (var i = cfg[category][0]; i <= cfg[category][1]; i++) {
-      let current = await this.getNftMetadata(i);
+      let current = metadata[network.network][i];
       if (current) {
-        result.push(current);
+        current.image = 'assets/' + category + '_lock.png';
+        let userOf = await this.contract.userOf(i);
+        let expires = await this.contract.userExpires(i);
+        var date = new Date(expires * 1000);
+        result.push({
+          metadata: current,
+          user: userOf,
+          id: i,
+          expires: expires == 0 ? "0" : date.toLocaleTimeString()
+        });
       }
     }
     return result;
@@ -112,7 +129,6 @@ export class WalletService {
 
     try {
       let metadataUrl = await this.contract.tokenURI(id);
-
       let metadata = await lastValueFrom(this.http.get<any>(metadataUrl));
       let userOf = await this.contract.userOf(id);
       let expires = await this.contract.userExpires(id);
@@ -158,6 +174,14 @@ export class WalletService {
   async log(type: string) {
     try {
       await lastValueFrom(this.http.post<any>('counter/' + type, {}));
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  async getNetwork() {
+    try {
+      return await lastValueFrom(this.http.get<any>('conf/network'));
     } catch (err) {
       console.log(err);
     }
