@@ -9,19 +9,14 @@ npx hardhat clean
 npx hardhat node
 ```
 
-# Compile, depoly and run
+# Setup and Run
 On a different terminal:
 ```
 npx hardhat compile
 npx hardhat deploy
-```
-
-Check that the deployed contract address is the same of CONTRACT variable of .env file
-
-```
 npx hardhat mint --num 30
 npx hardhat make-rentable --num 30
-
+npm run build
 npm run start
 ```
 Go to https://localhost:3000
@@ -33,4 +28,4 @@ npx hardhat test
 ```
 
 # Running Demo
-Not available at the moment
+At: [https://rentable-nft.vercel.app/](https://rentable-nft.vercel.app/)

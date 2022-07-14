@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 require('dotenv').config();
-const { NETWORK_ID, NETWORK, CONTRACT, ALCHEMY_KEY } = process.env;
+const { NETWORK_ID, NETWORK, CONTRACT, INFURA_KEY } = process.env;
 const { ethers } = require("ethers");
 const RentableNFT = require('../artifacts/contracts/RentableNFT.sol/RentableNFT.json');
 
@@ -36,7 +36,7 @@ router.post('/:category/:id/:command', async function (req, res) {
             if (NETWORK == 'localhost') {
                 provider = ethers.getDefaultProvider('http://localhost:8545');
             } else {
-                provider = ethers.getDefaultProvider(new ethers.providers.AlchemyProvider(NETWORK, ALCHEMY_KEY));
+                provider = new ethers.providers.InfuraProvider(NETWORK, INFURA_KEY);
             }
             let contract = new ethers.Contract(CONTRACT, RentableNFT.abi, provider);
             const checkUser = await contract.userOf(req.params.id);
