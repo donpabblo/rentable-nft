@@ -313,7 +313,7 @@
         "name": "Locker",
         "description": "Rentable NFT tied to asset - Test Locker donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/11",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/locker/11",
         "attributes": [
             {
                 "trait_type": "company",
@@ -333,13 +333,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/11/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/locker/11/"
     },
     "12": {
         "name": "Locker",
         "description": "Rentable NFT tied to asset - Test Locker donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/12",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/locker/12",
         "attributes": [
             {
                 "trait_type": "company",
@@ -359,13 +359,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/12/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/locker/12/"
     },
     "13": {
         "name": "Locker",
         "description": "Rentable NFT tied to asset - Test Locker donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/13",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/locker/13",
         "attributes": [
             {
                 "trait_type": "company",
@@ -385,13 +385,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/13/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/locker/13/"
     },
     "14": {
         "name": "Locker",
         "description": "Rentable NFT tied to asset - Test Locker donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/14",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/locker/14",
         "attributes": [
             {
                 "trait_type": "company",
@@ -411,13 +411,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/14/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/locker/14/"
     },
     "15": {
         "name": "Locker",
         "description": "Rentable NFT tied to asset - Test Locker donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/15",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/locker/15",
         "attributes": [
             {
                 "trait_type": "company",
@@ -437,13 +437,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/15/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/locker/15/"
     },
     "16": {
         "name": "Locker",
         "description": "Rentable NFT tied to asset - Test Locker donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/16",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/locker/16",
         "attributes": [
             {
                 "trait_type": "company",
@@ -463,13 +463,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/16/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/locker/16/"
     },
     "17": {
         "name": "Locker",
         "description": "Rentable NFT tied to asset - Test Locker donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/17",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/locker/17",
         "attributes": [
             {
                 "trait_type": "company",
@@ -489,13 +489,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/17/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/locker/17/"
     },
     "18": {
         "name": "Locker",
         "description": "Rentable NFT tied to asset - Test Locker donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/18",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/locker/18",
         "attributes": [
             {
                 "trait_type": "company",
@@ -515,13 +515,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/18/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/locker/18/"
     },
     "19": {
         "name": "Locker",
         "description": "Rentable NFT tied to asset - Test Locker donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/19",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/locker/19",
         "attributes": [
             {
                 "trait_type": "company",
@@ -541,13 +541,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/19/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/locker/19/"
     },
     "20": {
         "name": "Locker",
         "description": "Rentable NFT tied to asset - Test Locker donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/2.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/20",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/locker/20",
         "attributes": [
             {
                 "trait_type": "company",
@@ -567,13 +567,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/20/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/locker/20/"
     },
     "21": {
         "name": "Holyday House",
         "description": "Rentable NFT tied to asset - Test House donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/21",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/house/21",
         "attributes": [
             {
                 "trait_type": "company",
@@ -593,13 +593,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/21/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/house/21/"
     },
     "22": {
         "name": "Holyday House",
         "description": "Rentable NFT tied to asset - Test House donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/22",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/house/22",
         "attributes": [
             {
                 "trait_type": "company",
@@ -619,13 +619,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/22/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/house/22/"
     },
     "23": {
         "name": "Holyday House",
         "description": "Rentable NFT tied to asset - Test House donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/23",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/house/23",
         "attributes": [
             {
                 "trait_type": "company",
@@ -645,13 +645,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/23/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/house/23/"
     },
     "24": {
         "name": "Holyday House",
         "description": "Rentable NFT tied to asset - Test House donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/24",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/house/24",
         "attributes": [
             {
                 "trait_type": "company",
@@ -671,13 +671,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/24/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/house/24/"
     },
     "25": {
         "name": "Holyday House",
         "description": "Rentable NFT tied to asset - Test House donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/25",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/house/25",
         "attributes": [
             {
                 "trait_type": "company",
@@ -697,13 +697,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/25/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/house/25/"
     },
     "26": {
         "name": "Holyday House",
         "description": "Rentable NFT tied to asset - Test House donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/26",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/house/26",
         "attributes": [
             {
                 "trait_type": "company",
@@ -723,13 +723,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/26/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/house/26/"
     },
     "27": {
         "name": "Holyday House",
         "description": "Rentable NFT tied to asset - Test House donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/27",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/house/27",
         "attributes": [
             {
                 "trait_type": "company",
@@ -749,13 +749,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/27/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/house/27/"
     },
     "28": {
         "name": "Holyday House",
         "description": "Rentable NFT tied to asset - Test House donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/28",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/house/28",
         "attributes": [
             {
                 "trait_type": "company",
@@ -775,13 +775,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/28/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/house/28/"
     },
     "29": {
         "name": "Holyday House",
         "description": "Rentable NFT tied to asset - Test House donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/29",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/house/29",
         "attributes": [
             {
                 "trait_type": "company",
@@ -801,13 +801,13 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/29/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/house/29/"
     },
     "30": {
         "name": "Holyday House",
         "description": "Rentable NFT tied to asset - Test House donpabblo",
         "image": "https://bafybeibojnsadmboti6qmfbc5kvhxpihopqakdfjmgusnyt4doqibj7bw4.ipfs.nftstorage.link/images/3.png",
-        "external_url": "https://rentable-nft.vercel.app/#/asset/car/30",
+        "external_url": "https://rentable-nft.vercel.app/#/asset/house/30",
         "attributes": [
             {
                 "trait_type": "company",
@@ -827,6 +827,6 @@
             "unlock",
             "lock"
         ],
-        "endpoint": "https://rentable-nft.vercel.app/asset/car/30/"
+        "endpoint": "https://rentable-nft.vercel.app/asset/house/30/"
     }
 }

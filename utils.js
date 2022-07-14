@@ -45,4 +45,4 @@ function env(contract) {
     fs.writeFileSync('.env2', result);
 }
 
-unflat('localhost');
+unflat('goerli');
