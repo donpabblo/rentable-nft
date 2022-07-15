@@ -18,6 +18,7 @@ export class AssetComponent implements OnInit {
   user: string;
   expires: string;
   image: string;
+  waiting: boolean;
 
   wip: boolean;
   error: string;
@@ -32,14 +33,16 @@ export class AssetComponent implements OnInit {
     private messageService: MessageService
   ) {
     this.error = null;
+    this.waiting = false;
     this.route.params.subscribe(params => {
       this.nft = params.id;
       this.category = params.cat;
       this.getNftData(this.nft);
     });
     this.subscription = this.messageService.onMessage().subscribe(message => {
-      if (message && Object.keys(message).length > 0) {
+      if (message && Object.keys(message).length > 0 && message.type == 'rented') {
         this.getNftData(this.nft);
+        this.waiting = false;
       }
     });
   }
@@ -71,6 +74,7 @@ export class AssetComponent implements OnInit {
 
   async run(cmd: string) {
     try {
+      this.waiting = true;
       this.error = null;
       let command = await lastValueFrom(this.http.get<any>(this.metadata.endpoint + cmd));
       let signature = await this.walletService.sign(command);
@@ -80,23 +84,23 @@ export class AssetComponent implements OnInit {
       } else {
         this.image = 'assets/' + result.result + '.png';
       }
-      this.wip = false;
       await this.walletService.log('commands');
+      this.waiting = false;
     } catch (err) {
       this.error = err.message;
+      this.waiting = false;
     }
   }
 
   async rent() {
     try {
-      this.wip = true;
+      this.waiting = true;
       this.error = null;
       await this.walletService.rent(this.nft);
       await this.walletService.log('rented');
-      this.getNftData(this.nft);
-      this.wip = false;
     } catch (err) {
       this.error = JSON.stringify(err);
+      this.waiting = false;
     }
   }
 

@@ -20,7 +20,7 @@ export class NavbarComponent implements OnInit {
   ) {
     this.connected = false;
     this.subscription = this.messageService.onMessage().subscribe(message => {
-      if (message && Object.keys(message).length > 0) {
+      if (message && Object.keys(message).length > 0 && message.type == 'account') {
         this.connected = true;
         this.accountInfo = [];
         for (var key in message) {

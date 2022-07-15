@@ -1,3 +1,21 @@
+<div class ="row card-panel grey lighten-4" *ngIf="waiting">
+    <div class="col s10">
+        Please, wait for the operation to be finalized!
+    </div>
+    <div class="col s2">
+        <div class="preloader-wrapper active">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
 <div class="row" *ngIf="error">
     <div class="col s12">
         <div class="card-panel grey lighten-4">

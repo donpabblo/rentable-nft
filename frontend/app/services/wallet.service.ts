@@ -88,6 +88,7 @@ export class WalletService {
     let accounts = await this.provider.listAccounts();
     let balance = await this.provider.getBalance(accounts[0]);
     this.messageService.sendMessage({
+      type: 'account',
       chainId: network.chainId,
       chainName: network.chainId == 31337 ? 'localhost' : network.chainId == 1 ? 'mainnet' : network.name,
       account: accounts[0],
@@ -161,7 +162,11 @@ export class WalletService {
       value: ethers.utils.parseEther("0.01"),
       gasLimit: 500_000,
     });
-    await tx.wait();
+    tx.wait().then( res => {
+      this.messageService.sendMessage({
+        type: 'rented'
+      });
+    });
   }
 
   async loggedUser() {
