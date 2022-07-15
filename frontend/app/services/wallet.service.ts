@@ -39,7 +39,7 @@ export class WalletService {
     };
 
     this.web3Modal = new Web3Modal({
-      cacheProvider: true, // optional
+      cacheProvider: false, // optional
       disableInjectedProvider: false, // optional. For MetaMask / Brave / Opera.
       providerOptions // required
     });
@@ -54,11 +54,11 @@ export class WalletService {
     let contractAddress = await lastValueFrom(this.http.get<any>('conf/contract'));
     this.contract = new ethers.Contract(contractAddress.contract, RentableNFT.abi, this.provider);
 
-    window.ethereum.on("accountsChanged", (accounts) => {
-      this.fetchAccountData();
+    window.ethereum.on("accountsChanged", async (accounts) => {
+      await this.fetchAccountData();
     });
-    window.ethereum.on("chainChanged", (chainId) => {
-      this.fetchAccountData();
+    window.ethereum.on("chainChanged", async (chainId) => {
+      await this.fetchAccountData();
     });
     window.ethereum.on("disconnect", (error: { code: number; message: string }) => {
       this.messageService.clearMessages();
@@ -66,13 +66,39 @@ export class WalletService {
       this.signer = null;
       this.contract = null;
     });
-    this.provider.on("disconnect", (error: { code: number; message: string }) => {
-      this.messageService.clearMessages();
-      this.provider = null;
-      this.signer = null;
-      this.contract = null;
-    });
-    this.fetchAccountData();
+    await this.fetchAccountData();
+  }
+
+  public async checkNetwork() {
+    let network = await this.provider.getNetwork();;
+    let envNetwork = await this.getNetwork();
+    if (network.chainId.toString() != envNetwork.network_id) {
+      try {
+        await this.provider.send("wallet_switchEthereumChain", [{ chainId: envNetwork.network_id_hex }]);
+        await this.fetchAccountData();
+      } catch (error) {
+        if (error.code === 4902) {
+          try {
+            await this.provider.send("wallet_addEthereumChain",
+              [
+                {
+                  chainId: envNetwork.network_id_hex,
+                  chainName: envNetwork.name,
+                  rpcUrls: envNetwork.rpcUrls,
+                  nativeCurrency: envNetwork.nativeCurrency,
+                  blockExplorerUrls: envNetwork.blockExplorerUrls,
+                },
+              ],
+            );
+            await this.provider.send("wallet_switchEthereumChain", [{ chainId: envNetwork.network_id_hex }]);
+            await this.fetchAccountData();
+          } catch (error) {
+            alert(error.message);
+          }
+        }
+      }
+    }
+
   }
 
   async disconnect() {
@@ -89,10 +115,12 @@ export class WalletService {
     let balance = await this.provider.getBalance(accounts[0]);
     this.messageService.sendMessage({
       type: 'account',
-      chainId: network.chainId,
-      chainName: network.chainId == 31337 ? 'localhost' : network.chainId == 1 ? 'mainnet' : network.name,
-      account: accounts[0],
-      balance: ethers.utils.formatEther(balance)
+      data: {
+        chainId: network.chainId,
+        chainName: network.chainId == 31337 ? 'localhost' : network.name,
+        account: accounts[0],
+        balance: ethers.utils.formatEther(balance)
+      }
     });
   }
 
@@ -162,7 +190,7 @@ export class WalletService {
       value: ethers.utils.parseEther("0.0012"),
       gasLimit: 500_000,
     });
-    tx.wait().then( res => {
+    tx.wait().then(res => {
       this.messageService.sendMessage({
         type: 'rented'
       });

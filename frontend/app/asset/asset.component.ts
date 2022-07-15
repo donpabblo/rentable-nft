@@ -50,17 +50,19 @@ export class AssetComponent implements OnInit {
   getNftData(nft: number) {
     this.rentable = false;
     this.walletService.loggedUser().then(user => {
-      this.wip = true;
-      this.walletService.getNftMetadata(this.nft).then(assetInfo => {
-        this.metadata = assetInfo.metadata;
-        this.image = this.metadata.image;
-        this.user = assetInfo.user == '0x0000000000000000000000000000000000000000' ? 'None' : assetInfo.user == user ? 'me' : assetInfo.user;
-        this.expires = assetInfo.expires;
-        this.rentable = this.user && this.user != 'None' ? false : true;
-        this.wip = false;
-      }).catch(err => {
-        this.error = err;
-        this.wip = false;
+      this.walletService.checkNetwork().then(() => {
+        this.wip = true;
+        this.walletService.getNftMetadata(this.nft).then(assetInfo => {
+          this.metadata = assetInfo.metadata;
+          this.image = this.metadata.image;
+          this.user = assetInfo.user == '0x0000000000000000000000000000000000000000' ? 'None' : assetInfo.user == user ? 'me' : assetInfo.user;
+          this.expires = assetInfo.expires;
+          this.rentable = this.user && this.user != 'None' ? false : true;
+          this.wip = false;
+        }).catch(err => {
+          this.error = err;
+          this.wip = false;
+        });
       });
     });
   }

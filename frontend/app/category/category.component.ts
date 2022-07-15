@@ -29,16 +29,18 @@ export class CategoryComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.category = params.cat;
       this.walletService.loggedUser().then(user => {
-        this.user = user;
-        this.wip = true;
-        this.walletService.getNftByCategory(this.category).then(list => {
-          this.wip = false;
-          this.nft_list = list;
+        this.walletService.checkNetwork().then(() => {
+          this.user = user;
+          this.wip = true;
+          this.walletService.getNftByCategory(this.category).then(list => {
+            this.wip = false;
+            this.nft_list = list;
+          });
         });
       });
     });
     this.subscription = this.messageService.onMessage().subscribe(message => {
-      if (message && Object.keys(message).length > 0) {
+      if (message && Object.keys(message).length > 0 && message.type == 'account') {
         this.walletService.loggedUser().then(user => {
           this.user = user;
         });

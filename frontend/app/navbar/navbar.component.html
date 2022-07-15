@@ -24,7 +24,7 @@
     </li>
     <li class="divider"></li>
     <li *ngIf="connected"><a><i class="fa-solid fa-user-check sidenav-icon"></i>Account</a></li>
-    <div class="sidenav-info truncate" *ngFor="let info of accountInfo">{{ info.key}}: {{ info.value }}</div>
+    <div class="sidenav-info truncate" *ngFor="let item of accountInfo | keyvalue">{{ item.key}}: {{ item.value }}</div>
     <li *ngIf="!connected">
         <a class="waves-effect waves-light btn-small blue darken-2" (click)="connect()"> Connect</a>
     </li>

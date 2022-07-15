@@ -1,6 +1,6 @@
 <div class ="row card-panel grey lighten-4" *ngIf="waiting">
     <div class="col s10">
-        Please, wait for the operation to be finalized!
+        Please, wait for the transaction to be finalized!
     </div>
     <div class="col s2">
         <div class="preloader-wrapper active">
@@ -47,7 +47,7 @@
             <tbody>
                 <tr>
                     <td>Rented to</td>
-                    <td>{{ user }}</td>
+                    <td class="truncate">{{ user }}</td>
                 </tr>
                 <tr>
                     <td>Expires</td>

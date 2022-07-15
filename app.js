@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 
 var confRouter = require('./routes/conf');
 var assetRouter = require('./routes/asset');
-var counterRouter = require('./routes/counter');
 
 var app = express();
 
@@ -17,6 +16,5 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/conf', confRouter);
 app.use('/asset', assetRouter);
-app.use('/counter', counterRouter);
 
 module.exports = app;

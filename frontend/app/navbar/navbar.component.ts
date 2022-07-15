@@ -12,19 +12,19 @@ import { Subscription } from 'rxjs';
 export class NavbarComponent implements OnInit {
   subscription: Subscription;
   connected: boolean;
-  accountInfo: any[];
+  accountInfo: {};
 
   constructor(
     private walletService: WalletService,
     private messageService: MessageService
   ) {
     this.connected = false;
+    this.accountInfo = {};
     this.subscription = this.messageService.onMessage().subscribe(message => {
       if (message && Object.keys(message).length > 0 && message.type == 'account') {
         this.connected = true;
-        this.accountInfo = [];
-        for (var key in message) {
-          this.accountInfo.push({ key: key, value: message[key] });
+        for (var key in message.data) {
+          this.accountInfo[key] = message.data[key];
         }
       }
     });
@@ -40,7 +40,7 @@ export class NavbarComponent implements OnInit {
   }
 
   async connect() {
-    this.walletService.connect();
+    await this.walletService.connect();
   }
 
   async disconnect() {
