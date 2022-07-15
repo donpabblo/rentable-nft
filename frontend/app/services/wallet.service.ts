@@ -39,7 +39,7 @@ export class WalletService {
     };
 
     this.web3Modal = new Web3Modal({
-      cacheProvider: false, // optional
+      cacheProvider: true, // optional
       disableInjectedProvider: false, // optional. For MetaMask / Brave / Opera.
       providerOptions // required
     });
@@ -158,8 +158,8 @@ export class WalletService {
       await this.connect();
     }
     let contractWithSigner = this.contract.connect(this.signer);
-    let tx = await contractWithSigner.rent(id, 10, {
-      value: ethers.utils.parseEther("0.01"),
+    let tx = await contractWithSigner.rent(id, 60, {
+      value: ethers.utils.parseEther("0.0012"),
       gasLimit: 500_000,
     });
     tx.wait().then( res => {
@@ -174,14 +174,6 @@ export class WalletService {
       await this.connect();
     }
     return await this.signer.getAddress();
-  }
-
-  async log(type: string) {
-    try {
-      await lastValueFrom(this.http.post<any>('counter/' + type, {}));
-    } catch (err) {
-      console.log(err);
-    }
   }
 
   async getNetwork() {

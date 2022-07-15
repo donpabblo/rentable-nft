@@ -74,7 +74,6 @@ export class AssetComponent implements OnInit {
 
   async run(cmd: string) {
     try {
-      this.waiting = true;
       this.error = null;
       let command = await lastValueFrom(this.http.get<any>(this.metadata.endpoint + cmd));
       let signature = await this.walletService.sign(command);
@@ -84,11 +83,8 @@ export class AssetComponent implements OnInit {
       } else {
         this.image = 'assets/' + result.result + '.png';
       }
-      await this.walletService.log('commands');
-      this.waiting = false;
     } catch (err) {
       this.error = err.message;
-      this.waiting = false;
     }
   }
 
@@ -97,7 +93,6 @@ export class AssetComponent implements OnInit {
       this.waiting = true;
       this.error = null;
       await this.walletService.rent(this.nft);
-      await this.walletService.log('rented');
     } catch (err) {
       this.error = JSON.stringify(err);
       this.waiting = false;

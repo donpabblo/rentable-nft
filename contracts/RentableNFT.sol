@@ -11,7 +11,7 @@ contract RentableNFT is ERC4907, Ownable
     Counters.Counter private currentTokenId;
 
     string public baseTokenURI;
-    uint256 public baseAmount = 1000000000000000; //0.001 ethers
+    uint256 public baseAmount = 20000000000000; //0.00002 ethers
 
     struct RentableItem {
         bool rentable;

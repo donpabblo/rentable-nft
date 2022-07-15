@@ -88,3 +88,18 @@ task("make-rentable", "")
             console.log(`Token: ${i} is rentable`);
         }
     });
+
+task("change-rent-fee", "")
+    .addParam("num", "")
+    .addParam("fee", "")
+    .setAction(async function (taskArguments, hre) {
+        for (let i = 1; i <= taskArguments.num; i++) {
+            const contract = await getContractAt(hre, "RentableNFT", CONTRACT);
+            const txResponse = await contract.setRentFee(i, taskArguments.fee, {
+                gasLimit: 2_500_000,
+                gasPrice: 39000000000,
+            });
+            const txReceipt = await txResponse.wait();
+            console.log(`Token: ${i} - Rent fee: ${taskArguments.fee}`);
+        }
+    });
