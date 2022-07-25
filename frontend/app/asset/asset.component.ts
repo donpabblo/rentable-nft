@@ -80,6 +80,7 @@ export class AssetComponent implements OnInit {
       let command = await lastValueFrom(this.http.get<any>(this.metadata.endpoint + cmd));
       let signature = await this.walletService.sign(command);
       let result = await lastValueFrom(this.http.post<any>(this.metadata.endpoint + cmd, { message: command, signature: signature }));
+      this.walletService.log('actions');
       if ('error' in result) {
         this.error = JSON.stringify(result.error);
       } else {
@@ -95,6 +96,7 @@ export class AssetComponent implements OnInit {
       this.waiting = true;
       this.error = null;
       await this.walletService.rent(this.nft);
+      this.walletService.log('rents');
     } catch (err) {
       this.error = JSON.stringify(err);
       this.waiting = false;

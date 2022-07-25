@@ -27,6 +27,7 @@
         "materialize-css": "^1.0.0",
         "morgan": "~1.9.1",
         "process": "^0.11.10",
+        "sqlite3": "^5.0.10",
         "util": "^0.12.4",
         "web3modal": "^1.9.8"
     },

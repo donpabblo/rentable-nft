@@ -211,4 +211,12 @@ export class WalletService {
       console.log(err);
     }
   }
+
+  async log(type: string) {
+    try {
+      lastValueFrom(this.http.post<any>('counter/' + type, {}));
+    } catch (err) {
+      console.log(err);
+    }
+  }
 }
