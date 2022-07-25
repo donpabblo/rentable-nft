@@ -136,14 +136,13 @@ export class WalletService {
     });
   }
 
-  async getNftByCategory(category: string) {
+  async *getNftByCategory(category: string) {
     const cfg = {
       car: [1, 10],
       locker: [11, 20],
       house: [21, 30]
     }
     let network = await this.getNetwork();
-    let result = [];
 
     for (var i = cfg[category][0]; i <= cfg[category][1]; i++) {
       let current = metadata[network.network][i];
@@ -152,15 +151,14 @@ export class WalletService {
         let userOf = await this.contract.userOf(i);
         let expires = await this.contract.userExpires(i);
         var date = new Date(expires * 1000);
-        result.push({
+        yield {
           metadata: current,
           user: userOf,
           id: i,
           expires: expires == 0 ? "0" : date.toLocaleTimeString()
-        });
+        };
       }
     }
-    return result;
   }
 
   async getNftMetadata(id: number) {

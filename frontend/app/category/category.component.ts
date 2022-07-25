@@ -29,13 +29,15 @@ export class CategoryComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.category = params.cat;
       this.walletService.loggedUser().then(user => {
-        this.walletService.checkNetwork().then(() => {
+        this.walletService.checkNetwork().then(async () => {
           this.user = user;
           this.wip = true;
-          this.walletService.getNftByCategory(this.category).then(list => {
+          let generator = this.walletService.getNftByCategory(this.category);
+          for (var i = 0; i < 10; i++) {
+            let currentNft = (await generator.next()).value;
+            this.nft_list.push(currentNft);
             this.wip = false;
-            this.nft_list = list;
-          });
+          }
         });
       });
     });
