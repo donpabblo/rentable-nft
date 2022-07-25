@@ -66,6 +66,18 @@ export class WalletService {
       this.signer = null;
       this.contract = null;
     });
+    this.provider.on("accountsChanged", async (accounts) => {
+      await this.fetchAccountData();
+    });
+    this.provider.on("chainChanged", async (chainId) => {
+      await this.fetchAccountData();
+    });
+    this.provider.on("disconnect", (error: { code: number; message: string }) => {
+      this.messageService.clearMessages();
+      this.provider = null;
+      this.signer = null;
+      this.contract = null;
+    });
     await this.fetchAccountData();
   }
 
