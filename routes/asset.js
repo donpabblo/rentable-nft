@@ -40,8 +40,8 @@ router.post('/:category/:id/:command', async function (req, res) {
             }
             let contract = new ethers.Contract(CONTRACT, RentableNFT.abi, provider);
             const checkUser = await contract.userOf(req.params.id);
-            //TODO also the owner must be enabled
-            if (checkUser == verify) {
+            const owner = await contract.ownerOf(req.params.id);
+            if (checkUser == verify || owner == verify) {
                 res.json({ result: req.params.category + '_' + req.params.command });
             } else {
                 res.json({ error: 'You are not allowed to send commands' }).status(403);

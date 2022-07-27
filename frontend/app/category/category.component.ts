@@ -25,7 +25,6 @@ export class CategoryComponent implements OnInit {
     private messageService: MessageService
   ) {
     this.error = null;
-    this.nft_list = [];
     this.route.params.subscribe(params => {
       this.category = params.cat;
       this.walletService.loggedUser().then(user => {
@@ -33,6 +32,7 @@ export class CategoryComponent implements OnInit {
           this.user = user;
           this.wip = true;
           let generator = this.walletService.getNftByCategory(this.category);
+          this.nft_list = [];
           for (var i = 0; i < 10; i++) {
             let currentNft = (await generator.next()).value;
             this.nft_list.push(currentNft);

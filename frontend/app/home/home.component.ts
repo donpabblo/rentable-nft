@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
 
   wip: boolean;
   error: string;
+  connected: boolean;
 
   constructor(
     private router: Router,
@@ -18,6 +19,7 @@ export class HomeComponent implements OnInit {
   ) {
     this.wip = false;
     this.error = null;
+    this.connected = this.walletService.isConnected();
   }
 
   ngOnInit(): void {
@@ -26,5 +28,11 @@ export class HomeComponent implements OnInit {
 
   gotocategory(category: string) {
     this.router.navigate(['category/' + category])
+  }
+
+  async connect() {
+    await this.walletService.connect();
+    await this.walletService.checkNetwork();
+    this.connected = true;
   }
 }

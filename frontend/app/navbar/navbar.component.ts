@@ -41,6 +41,11 @@ export class NavbarComponent implements OnInit {
 
   async connect() {
     await this.walletService.connect();
+    let accInfo = await this.walletService.fetchAccountData();
+    this.connected = true;
+    for (var key in accInfo.data) {
+      this.accountInfo[key] = accInfo.data[key];
+    }
   }
 
   async disconnect() {

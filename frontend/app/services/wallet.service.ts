@@ -121,11 +121,11 @@ export class WalletService {
     this.contract = null;
   }
 
-  private async fetchAccountData() {
+  public async fetchAccountData() {
     let network = await this.provider.getNetwork();
     let accounts = await this.provider.listAccounts();
     let balance = await this.provider.getBalance(accounts[0]);
-    this.messageService.sendMessage({
+    let message = {
       type: 'account',
       data: {
         chainId: network.chainId,
@@ -133,7 +133,9 @@ export class WalletService {
         account: accounts[0],
         balance: ethers.utils.formatEther(balance)
       }
-    });
+    };
+    this.messageService.sendMessage(message);
+    return message;
   }
 
   async *getNftByCategory(category: string) {
@@ -212,6 +214,11 @@ export class WalletService {
       await this.connect();
     }
     return await this.signer.getAddress();
+  }
+
+  public isConnected() {
+    if (this.provider) return true;
+    return false;
   }
 
   async getNetwork() {
