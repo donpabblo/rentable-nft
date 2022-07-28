@@ -48,12 +48,12 @@ export class WalletService {
 
   async connect() {
     let instance = await this.web3Modal.connect();
-    alert("instance");
     this.provider = new ethers.providers.Web3Provider(instance, "any");
     this.signer = this.provider.getSigner();
 
     let contractAddress = await lastValueFrom(this.http.get<any>('conf/contract'));
     this.contract = new ethers.Contract(contractAddress.contract, RentableNFT.abi, this.provider);
+    await this.fetchAccountData();
 
     window.ethereum.on("accountsChanged", async (accounts) => {
       await this.fetchAccountData();
@@ -79,9 +79,6 @@ export class WalletService {
       this.signer = null;
       this.contract = null;
     });
-    alert("before");
-    await this.fetchAccountData();
-    alert("after");
   }
 
   public async checkNetwork() {
@@ -124,7 +121,7 @@ export class WalletService {
     this.contract = null;
   }
 
-  public async fetchAccountData() {
+  private async fetchAccountData() {
     let network = await this.provider.getNetwork();
     let accounts = await this.provider.listAccounts();
     let balance = await this.provider.getBalance(accounts[0]);
