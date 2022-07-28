@@ -48,6 +48,7 @@ export class WalletService {
 
   async connect() {
     let instance = await this.web3Modal.connect();
+    alert("instance");
     this.provider = new ethers.providers.Web3Provider(instance, "any");
     this.signer = this.provider.getSigner();
 
@@ -78,7 +79,9 @@ export class WalletService {
       this.signer = null;
       this.contract = null;
     });
+    alert("before");
     await this.fetchAccountData();
+    alert("after");
   }
 
   public async checkNetwork() {

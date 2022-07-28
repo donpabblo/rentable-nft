@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { WalletService } from '../services/wallet.service';
 
 @Component({
@@ -14,7 +13,6 @@ export class HomeComponent implements OnInit {
   connected: boolean;
 
   constructor(
-    private router: Router,
     private walletService: WalletService
   ) {
     this.wip = false;
@@ -24,10 +22,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.walletService.log('views');
-  }
-
-  gotocategory(category: string) {
-    this.router.navigate(['category/' + category])
   }
 
   async connect() {
